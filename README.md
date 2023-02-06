@@ -8,7 +8,6 @@
 
 ## Execution:
 ---
-```
 Interactive Mode
 
 $ ./console.py
@@ -22,8 +21,8 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
-```
-```
+---
+---
 Non-interactive Mode
 
 $ echo "help" | ./console.py
@@ -45,11 +44,11 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
-```
+---
 All tests should pass in interactive mode
-```
+---
 $ echo "python3 -m unittest discover tests" | bash
-```
+---
 
 
 ## Authors:
