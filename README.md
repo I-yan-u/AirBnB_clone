@@ -1,4 +1,6 @@
+---
 # Command interpreter to manage AirBnB objects
+---
 
 - put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
 - create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
@@ -7,7 +9,7 @@
 - create all unittests to validate all our classes and storage engine.
 
 ## Execution:
----
+```
 Interactive Mode
 
 $ ./console.py
@@ -21,8 +23,9 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
----
----
+```
+
+```
 Non-interactive Mode
 
 $ echo "help" | ./console.py
@@ -44,15 +47,17 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
----
+```
+
 All tests should pass in interactive mode
----
+
+```
 $ echo "python3 -m unittest discover tests" | bash
----
+```
+
 
 
 ## Authors:
----
 Iyanu Ajimobi <->
 
 
