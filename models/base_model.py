@@ -30,14 +30,14 @@ class BaseModel:
 
     def to_dict(self):
         """ Returns a dictionary of the instance attributes"""
-       base_dict = self.__dict__.copy()
-       base_dict[created_at] = self.created_at.isoformat()
-       base_dict[updated_at] = self.updated_at.isoformat()
-       base_dict[__class__] = self.__class__.__name__
+        base_dict = self.__dict__.copy()
+        base_dict["created_at"] = self.created_at.isoformat()
+        base_dict["updated_at"] = self.updated_at.isoformat()
+        base_dict["__class__"] = self.__class__.__name__
 
-       return base_dict
+        return base_dict
 
     def __str__(self):
         """ String Representation of base model"""
-        return "[{}] ({}) {}".format(self.__class__.__name__, 
-                \self.id, self.__dict__)
+        return "[{}] ({}) {}".format(self.__class__.__name__, \
+                self.id, self.__dict__)
