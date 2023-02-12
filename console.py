@@ -2,6 +2,7 @@
 import cmd
 """ n interactive shell """
 
+
 class HBNBCommand(cmd.Cmd):
     """ An instance of the cmd class """
     prompt = '(hbnb) '
@@ -16,6 +17,7 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
