@@ -57,5 +57,6 @@ $ echo "python3 -m unittest discover tests" | bash
 
 ## Authors:
 Iyanu Ajimobi <->
+Nafiu Ahmad <->
 
 
