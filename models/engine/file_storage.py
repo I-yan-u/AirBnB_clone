@@ -2,9 +2,8 @@
 """
 File Storage module
 """
+from models import base_model
 import json
-import models
-import os.path
 
 
 class FileStorage:
@@ -16,7 +15,7 @@ class FileStorage:
     __objects: contains objects imported for serialization
     __file_path: The path of the JSON file
     """
-    __file_path = "objects.json"
+    __file_path = "file.json"
     __objects = {}
 
     def all(self):
@@ -44,6 +43,6 @@ class FileStorage:
                for o in ob_dict.values():
                    cls_name = o['__class__']
                    del o['__class__']
-                   FileStorage.new(eval(cls_name)(**o))
+                   self.new(eval(f"base_model.{cls_name}")(**o))
         except FileNotFoundError:
             return
