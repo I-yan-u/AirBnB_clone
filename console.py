@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Console Module used to manage objects AirBNB Project"""
 import cmd
 """ n interactive shell """
 
