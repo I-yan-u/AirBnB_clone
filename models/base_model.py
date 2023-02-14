@@ -1,14 +1,12 @@
-#!/usr/bin/python3
-"""
-Contains BaseModel class.
-"""
+#!/usr/bin/python
+""" Module that contains the Basemodel for the project"""
+import models
 import uuid
 from datetime import datetime
-import models
 
 
 class BaseModel:
-    """ Base model for AirBnB package"""
+    """ Base Model Class """
 
     def __init__(self, *args, **kwargs):
         """
